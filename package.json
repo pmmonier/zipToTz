@@ -6,6 +6,10 @@
   "scripts": {
     "upload": "npm version patch && npm publish"
   },
+  "repository": {
+    "type": "git",
+    "url": "http://git@github.com:pmmonier/zipToTz.git"
+  },
   "author": "Pedro Monier",
   "license": "ISC",
   "devDependencies": {
