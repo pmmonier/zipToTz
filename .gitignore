@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+.serverless/*
+/node_modules/*
+/typings/*
+/.idea/*
+.idea/*
+package-lock.json
