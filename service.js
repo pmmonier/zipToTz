@@ -31,7 +31,7 @@ class ZipToTz {
             }
             const filePath = process.cwd();
             console.log(333, filePath);
-            let fileContents = yield fs.readFileSync(`${filePath}/.${fileName}.yml`, 'utf8');
+            let fileContents = yield fs.readFileSync(`${filePath}/node_modules/zip-to-timezone/src/.${fileName}.yml`, 'utf8');
             let data = yaml.safeLoad(fileContents);
             for (const [timezone] of Object.entries(data)) {
                 const found = data[timezone].find(element => element === value);
