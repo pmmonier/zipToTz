@@ -1,0 +1,1 @@
+export {ZipToTz} from './service';

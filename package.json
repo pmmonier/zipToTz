@@ -2,9 +2,9 @@
   "name": "zip-to-timezone",
   "version": "1.0.22",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "test": "node app.js",
+    "test": "node index.js",
     "upload": "npm version patch && npm publish"
   },
   "repository": {
