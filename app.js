@@ -30,6 +30,7 @@ class ZipToTz {
                 console.log('Invalid format or zipCode length');
             }
             const filePath = process.cwd();
+            console.log(333, filePath);
             let fileContents = yield fs.readFileSync(`${filePath}/.${fileName}.yml`, 'utf8');
             let data = yaml.safeLoad(fileContents);
             for (const [timezone] of Object.entries(data)) {
@@ -43,4 +44,4 @@ class ZipToTz {
     }
 }
 exports.ZipToTz = ZipToTz;
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=app.js.map
