@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "node index.js",
     "upload": "npm version patch && npm publish"
   },
   "repository": {

@@ -29,7 +29,8 @@ class ZipToTz {
             if (!Number.isInteger(Number(value)) || value.length != 5) {
                 console.log('Invalid format or zipCode length');
             }
-            let fileContents = yield fs.readFileSync(`./src/${fileName}.yml`, 'utf8');
+            const filePath = process.cwd();
+            let fileContents = yield fs.readFileSync(`${filePath}/src/${fileName}.yml`, 'utf8');
             let data = yaml.safeLoad(fileContents);
             for (const [timezone] of Object.entries(data)) {
                 const found = data[timezone].find(element => element === value);
