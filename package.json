@@ -1,10 +1,10 @@
 {
   "name": "zip-to-timezone",
-  "version": "1.0.17",
+  "version": "1.0.15",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "publish": "npm version patch && npm publish"
+    "upload": "npm version patch && npm publish"
   },
   "author": "Pedro Monier",
   "license": "ISC",
