@@ -6,7 +6,7 @@ export class ZipToTz {
         return await this.getTimeZone(zip, 'timezones_to_zipcodes');
     }
 
-    async full(zip: string): Promise<any> {
+    async full(zip: string): Promise<string> {
         return await this.getTimeZone(zip, 'timezones_to_zipcodes(full name)');
     }
 
