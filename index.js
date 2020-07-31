@@ -1,6 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.ZipToTz = void 0;
 const fs = require('fs');
 const yaml = require('js-yaml');
 class ZipToTz {
@@ -25,5 +22,5 @@ class ZipToTz {
         return 'Not found';
     }
 }
-exports.ZipToTz = ZipToTz;
+module.exports = new ZipToTz();
 //# sourceMappingURL=index.js.map

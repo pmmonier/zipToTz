@@ -1,7 +1,7 @@
 const fs = require('fs');
 const yaml = require('js-yaml');
 
-export class ZipToTz {
+class ZipToTz {
     short(zip: string) {
         return this.getTimeZone(zip, 'timezones_to_zipcodes');
     }
@@ -26,6 +26,7 @@ export class ZipToTz {
     }
 }
 
+module.exports = new ZipToTz();
 //Eastern Time  - America/New_York
 //Central Time  - America/Chicago
 // Mountain Time - America/Denver
