@@ -1,6 +1,6 @@
 {
   "name": "zip-to-timezone",
-  "version": "1.0.30",
+  "version": "1.0.31",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,11 @@
     "type": "git",
     "url": "http://git@github.com:pmmonier/zipToTz.git"
   },
-  "keywords": ["zipcode", "timezone", "US timezone"],
+  "keywords": [
+    "zipcode",
+    "timezone",
+    "US timezone"
+  ],
   "author": "Pedro Monier",
   "license": "ISC",
   "devDependencies": {
