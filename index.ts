@@ -26,3 +26,12 @@ export class ZipToTz {
         return 'Not found'
     }
 }
+
+
+//Eastern Time  - America/New_York
+//Central Time  - America/Chicago
+// Mountain Time - America/Denver
+// Pacific Time - America/Los_Angeles
+// Arizona  -  America/Phoenix
+// Hawaii  - Pacific/Honolulu
+// Alaska  - America/Anchorage

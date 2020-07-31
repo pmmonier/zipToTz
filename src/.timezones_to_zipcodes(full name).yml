@@ -1,5 +1,5 @@
 ---
-Eastern Time:
+America/New_York:
 - '00100'
 - '00101'
 - '00102'
@@ -39100,7 +39100,7 @@ Eastern Time:
 - '56997'
 - '56998'
 - '56999'
-Central Time:
+America/Chicago:
 - '35000'
 - '35001'
 - '35002'
@@ -64541,7 +64541,7 @@ Central Time:
 - '79797'
 - '79798'
 - '79799'
-Mountain Time:
+America/Denver:
 - '57700'
 - '57701'
 - '57702'
@@ -71652,7 +71652,7 @@ Mountain Time:
 - '97997'
 - '97998'
 - '97999'
-Pacific Time:
+America/Los_Angeles:
 - '83500'
 - '83501'
 - '83502'
@@ -81153,7 +81153,7 @@ Pacific Time:
 - '99497'
 - '99498'
 - '99499'
-Arizona:
+America/Phoenix:
 - '85000'
 - '85001'
 - '85002'
@@ -82344,7 +82344,7 @@ Arizona:
 - '86597'
 - '86598'
 - '86599'
-Hawaii:
+Pacific/Honolulu:
 - '96700'
 - '96701'
 - '96702'
@@ -82545,7 +82545,7 @@ Hawaii:
 - '96897'
 - '96898'
 - '96899'
-Alaska:
+America/Anchorage:
 - '99500'
 - '99501'
 - '99502'
