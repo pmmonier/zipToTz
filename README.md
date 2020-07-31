@@ -7,12 +7,12 @@
 ```
   npm install --save zipcode-to-timezone
 ```
+**Import**
+```
+  const zipToTz = require('zip-to-timezone');
+```
 **Usage**
 ```
-  import { ZipToTz } from "zip-to-timezone";
-  
-  const zipToTz = new ZipToTz();
-  
   const tz = zipToTz.full('33487'); // America/New_York
   
   const tz = zipToTz.short('33487'); // EDT 
