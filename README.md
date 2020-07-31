@@ -13,5 +13,6 @@ Usage
   const zipToTz = new ZipToTz();
   
   const tz = zipToTz.full('33487'); // America/New_York
+  
   const tz = zipToTz.short('33487'); // EDT 
   
