@@ -11,6 +11,7 @@
     "type": "git",
     "url": "http://git@github.com:pmmonier/zipToTz.git"
   },
+  "keywords": ["zipcode", "timezone", "US timezone"],
   "author": "Pedro Monier",
   "license": "ISC",
   "devDependencies": {
