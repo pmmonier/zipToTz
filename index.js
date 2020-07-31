@@ -26,7 +26,4 @@ class ZipToTz {
     }
 }
 exports.ZipToTz = ZipToTz;
-const v = new ZipToTz();
-let g = v.full('99618');
-console.log(666, g);
 //# sourceMappingURL=index.js.map

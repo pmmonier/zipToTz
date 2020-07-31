@@ -26,9 +26,6 @@ export class ZipToTz {
     }
 }
 
-const v = new ZipToTz()
-let g = v.full('99618');
-console.log(666, g)
 //Eastern Time  - America/New_York
 //Central Time  - America/Chicago
 // Mountain Time - America/Denver
