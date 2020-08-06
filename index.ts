@@ -13,7 +13,7 @@ class ZipToTz {
     private getTimeZone(zip: string, fileName: string) {
         const value = zip.replace(/\s/g, '');
         if (!Number.isInteger(Number(value)) || value.length != 5) {
-            console.log('Invalid format or zipCode length')
+            throw new Error('Invalid format or zipCode length');
         }
         const filePath = process.cwd();
         let zipList = yaml.safeLoad(fs.readFileSync(`${filePath}/node_modules/zip-to-timezone/src/.${fileName}.yml`, 'utf8'));
@@ -22,7 +22,7 @@ class ZipToTz {
             if (found)
                 return timezone
         }
-        return 'Not found'
+        throw new Error('Not found');
     }
 }
 
