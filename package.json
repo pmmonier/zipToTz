@@ -9,8 +9,9 @@
   ],
   "scripts": {
     "build": "tsc",
-    "prepare": "npm run build && npm version patch",
-    "test": "node index.js"
+    "postbuild": "cpy --dot 'src/*.yml' dist/",
+    "prepare": "npm run build",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -24,8 +25,12 @@
   "author": "Pedro Monier",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^26.0.14",
     "@types/js-yaml": "^3.12.5",
     "@types/node": "^14.11.1",
+    "cpy-cli": "^3.1.1",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.4.0",
     "tslint": "^6.1.2",
     "typescript": "^3.9.7"
   },
