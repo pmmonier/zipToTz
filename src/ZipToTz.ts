@@ -1,4 +1,5 @@
 import * as fs from 'fs';
+import * as path from 'path';
 import * as yaml from 'js-yaml';
 
 export class ZipToTz {
@@ -15,8 +16,9 @@ export class ZipToTz {
     if (!Number.isInteger(Number(value)) || value.length != 5) {
       throw new Error('Invalid format or zipCode length');
     }
-    const filePath = process.cwd();
-    let zipList = yaml.safeLoad(fs.readFileSync(`${filePath}/node_modules/zip-to-timezone/src/.${fileName}.yml`, 'utf8'));
+    const dirPath: string = path.dirname(__filename);
+    console.log (dirPath);
+    let zipList = <object> yaml.safeLoad(fs.readFileSync(dirPath +`/.${fileName}.yml`, 'utf8'));
     for (const [timezone] of Object.entries(zipList)) {
       const found = zipList[timezone].find(element => element === value)
       if (found)
