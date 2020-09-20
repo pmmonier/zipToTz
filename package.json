@@ -1,11 +1,16 @@
 {
   "name": "zip-to-timezone",
-  "version": "1.0.36",
+  "version": "1.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "node index.js",
-    "upload": "npm version patch && npm publish"
+    "build": "tsc",
+    "prepare": "npm run build && npm version patch",
+    "test": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -19,11 +24,12 @@
   "author": "Pedro Monier",
   "license": "ISC",
   "devDependencies": {
-    "tslint": "^6.1.2"
+    "@types/js-yaml": "^3.12.5",
+    "@types/node": "^14.11.1",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.7"
   },
   "dependencies": {
-    "@types/node": "^14.0.27",
-    "js-yaml": "^3.14.0",
-    "typescript": "^3.9.7"
+    "js-yaml": "^3.14.0"
   }
 }
