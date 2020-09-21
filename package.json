@@ -11,7 +11,8 @@
     "build": "tsc",
     "postbuild": "cpy --dot 'src/*.yml' dist/",
     "prepare": "npm run build",
-    "test": "jest"
+    "test": "jest",
+    "upload": "npm version patch && npm publish"
   },
   "repository": {
     "type": "git",
