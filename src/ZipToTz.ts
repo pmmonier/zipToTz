@@ -17,7 +17,6 @@ export class ZipToTz {
       throw new Error('Invalid format or zipCode length');
     }
     const dirPath: string = path.dirname(__filename);
-    console.log (dirPath);
     let zipList = <object> yaml.safeLoad(fs.readFileSync(dirPath +`/.${fileName}.yml`, 'utf8'));
     for (const [timezone] of Object.entries(zipList)) {
       const found = zipList[timezone].find(element => element === value)
