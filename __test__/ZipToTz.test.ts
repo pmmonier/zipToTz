@@ -8,6 +8,10 @@ test('should return short timezone EDT for zip 33487', () => {
   expect(new ZipToTz().short('33487')).toBe('EDT');
 });
 
+test('should return full timezone America/Los_Angeles for zip 97838', () => {
+  expect(new ZipToTz().full('97838')).toBe('America/Los_Angeles');
+});
+
 test('should throw an error if called with zip with length > 5', () => {
   expect(() => new ZipToTz().short('qwerty')).toThrow('Invalid format or zipCode length');
 });
