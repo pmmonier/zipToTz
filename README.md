@@ -5,7 +5,7 @@ This package provides an updated list of US zipcodes from trusted source (2020).
 ## Installation 
 
 ```bash
-  npm install --save zipcode-to-timezone
+  npm install --save zip-to-timezone
 ```
 
 ## Import
