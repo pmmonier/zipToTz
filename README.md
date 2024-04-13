@@ -1,8 +1,9 @@
 # zipToTz
 
+This is a fork of https://github.com/pmmonier/zipToTz (original project)
 This package provides an updated list of US zipcodes from trusted source (2020).
 
-## Installation 
+## Installation
 
 ```bash
   npm install --save zip-to-timezone
@@ -11,20 +12,20 @@ This package provides an updated list of US zipcodes from trusted source (2020).
 ## Import
 
 ```javascript
-  const { ZipToTz } = require('zip-to-timezone');
-  // OR
-  import { ZipToTz } from 'zip-to-timezone';
+const { ZipToTz } = require("zip-to-timezone");
+// OR
+import { ZipToTz } from "zip-to-timezone";
 ```
 
 ## Usage
 
 ```javascript
-  try {
-    const tz = new ZipToTz().full('33487'); // America/New_York
-    const tz = new ZipToTz().short('33487'); // EDT 
-  } catch(error) {
-    // handler error  
-  }
+try {
+  const tz = new ZipToTz().full("33487"); // America/New_York
+  const tz = new ZipToTz().short("33487"); // EDT
+} catch (error) {
+  // handler error
+}
 ```
 
 ## Error Messages
